@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+  },
+  "experimentalDecorators":true,
+  "paths": {
+    "@/*": [
+      "src/*"
+    ]
+  },
+  "files": [
+    "src/shims-vue.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "spinal-browser-viewer_sample",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf wwww && NODE_ENV=production node srcBack/index.js",
+    "dev": "NODE_ENV=development node srcBack/index.js",
+    "reset": "rm -fr www"
+  },
+  "bin": {
+    "create_maintainer_env": "bin/parcel.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Free_Software_License_Agreement.pdf",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "element-ui": "^2.13.2",
+    "express-http-proxy": "^1.6.2",
+    "lodash.throttle": "^4.1.1",
+    "parcel-bundler": "^1.12.4",
+    "spinal-forge-viewer": "https://github.com/spinalcom/spinal-forge-viewer.git",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@vue/component-compiler-utils": "^3.1.2",
+    "parcel-plugin-static-files-copy": "^2.4.3"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "staticFiles": {
+    "staticPath": "srcFront/public"
+  }
+}
